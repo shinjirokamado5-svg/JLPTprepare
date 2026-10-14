@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="ja" data-t="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Japanese Vocabulary 1000</title>
+<style>
+*{box-sizing:border-box}
+:root{--bg:#fff;--fg:#1a1d21;--bd:#e4e6ea;--mut:#6b7280;--ac:#2563eb;--hl:#f7f8fa;--star:#f59e0b;--ok:#059669;--warn:#b45309}
+html[data-t=dark]{--bg:#17191d;--fg:#e7e9ec;--bd:#2c3037;--mut:#9aa2ad;--ac:#6ea8fe;--hl:#1e2126;--star:#fbbf24;--ok:#34d399;--warn:#fbbf24}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.55 system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,"Noto Sans JP",sans-serif;-webkit-text-size-adjust:100%}
+.mm{font-family:"Noto Sans Myanmar","Myanmar Text",Padauk,Pyidaungsu,system-ui,sans-serif;line-height:1.85}
+.sticky{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--bd)}
+header{display:flex;gap:8px;align-items:center;padding:8px 12px;flex-wrap:wrap}
+h1{font-size:15px;margin:0;font-weight:700}
+.cnt{font-size:12px;color:var(--mut);border:1px solid var(--bd);border-radius:99px;padding:2px 9px;white-space:nowrap}
+.badge{font-size:11px;border:1px solid var(--bd);border-radius:99px;padding:2px 8px;color:var(--mut)}
+.badge.warn{color:var(--warn);border-color:var(--warn)}
+.sp{flex:1}
+.bar{display:flex;gap:6px;padding:0 12px 8px;flex-wrap:wrap;align-items:center}
+input[type=search]{flex:1;min-width:170px;padding:7px 10px;border:1px solid var(--bd);border-radius:7px;background:var(--bg);color:var(--fg);font-size:14px}
+input[type=search]:focus{outline:2px solid var(--ac);outline-offset:-1px}
+button{cursor:pointer;border:1px solid var(--bd);background:var(--bg);color:var(--fg);border-radius:7px;padding:6px 10px;font-size:13px;font-family:inherit}
+button:hover{border-color:var(--ac)}
+button.on{background:var(--ac);border-color:var(--ac);color:#fff}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:1020px;font-size:13.5px}
+th,td{border-bottom:1px solid var(--bd);padding:7px 9px;vertical-align:top;text-align:left}
+thead th{position:sticky;top:var(--sh,88px);background:var(--bg);z-index:3;font-size:12px;font-weight:600;color:var(--mut);white-space:nowrap;border-bottom:1px solid var(--bd)}
+tbody tr:hover{background:var(--hl)}
+.id-cell{font-variant-numeric:tabular-nums;color:var(--mut);font-size:12.5px}
+.jp{font-size:16px;font-weight:700;letter-spacing:.01em}
+.rd{font-size:12.5px;color:var(--mut);white-space:nowrap}
+.ex{font-size:12.5px;max-width:340px}
+.ex .mm{color:var(--mut);margin-top:2px}
+.sm{padding:3px 7px;font-size:12px;line-height:1.4}
+.icon{padding:3px 7px;font-size:13px;min-width:30px}
+.fv.on{color:var(--star);border-color:var(--star)}
+select.sm{background:var(--bg);color:var(--fg);border:1px solid var(--bd);border-radius:6px;padding:3px 5px;font-size:12px;font-family:inherit}
+select.sm[data-st=learning]{border-color:var(--warn);color:var(--warn)}
+select.sm[data-st=memorized]{border-color:var(--ok);color:var(--ok)}
+a.td{color:var(--ac);text-decoration:none;font-size:12.5px;border:1px solid var(--bd);border-radius:6px;padding:3px 8px;display:inline-block;white-space:nowrap}
+a.td:hover{border-color:var(--ac);text-decoration:underline}
+.empty{padding:48px 16px;text-align:center;color:var(--mut)}
+.empty b{display:block;color:var(--fg);font-size:15px;margin-bottom:6px}
+footer{padding:14px 12px 40px;color:var(--mut);font-size:12px;max-width:1000px;margin:0 auto}
+footer p{margin:5px 0}
+.pager{display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap;padding:12px 10px 18px;border-top:1px solid var(--bd)}
+.pager .info{color:var(--mut);font-size:12.5px;padding:0 4px;white-space:nowrap}
+.pager .pages{display:flex;gap:4px;flex-wrap:wrap;justify-content:center}
+.pager button{min-width:32px;padding:4px 7px;font-size:12.5px;line-height:1.5}
+.pager button:disabled{opacity:.4;cursor:not-allowed}
+.pager button:disabled:hover{border-color:var(--bd)}
+.pager button.pg.on{background:var(--ac);border-color:var(--ac);color:#fff}
+.pager .ell{color:var(--mut);padding:0 3px;align-self:center;font-size:12.5px}
+.sizer{display:flex;align-items:center;gap:5px;color:var(--mut);font-size:12.5px;white-space:nowrap}
+.sizer select{background:var(--bg);color:var(--fg);border:1px solid var(--bd);border-radius:6px;padding:4px 6px;font-size:12.5px;font-family:inherit}
+@media(max-width:760px){
+  thead th{position:static}
+  h1{font-size:14px}
+  .pager .info{width:100%;text-align:center;order:-1}
+}
+</style>
+</head>
+<body>
+
+<div class="sticky" id="stickyTop">
+  <header>
+    <h1>Japanese Vocabulary 1000</h1>
+    <span class="cnt" id="cnt" title="Displayed entries / Total entries">0 / 1000</span>
+    <span class="badge" id="idBadge" title="ID integrity check">IDs ✓</span>
+    <span class="sp"></span>
+    <button id="theme" type="button" title="Dark Mode">🌙</button>
+  </header>
+  <div class="bar">
+    <input id="q" type="search" placeholder="検索 / ရှာဖွေ — 日本語・かな・မြန်မာ・品詞・例文" autocomplete="off" spellcheck="false">
+    <button id="clr" type="button" title="Clear">✕</button>
+    <button id="bAll" class="on" type="button">All Vocabulary</button>
+    <button id="bFav" type="button">★ Favorites <span id="fn">0</span></button>
+  </div>
+</div>
+
+<div class="wrap">
+  <table id="tb">
+    <!-- <thead>
+      <tr>
+        <th style="width:56px">ID</th>
+        <th style="width:120px">日本語 / 漢字</th>
+        <th style="width:110px">読み</th>
+        <th style="width:150px">မြန်မာအဓိပ္ပါယ်</th>
+        <th style="width:120px">品詞</th>
+        <th>例文 / ဥပမာဝါကျ</th>
+        <th style="width:48px">Audio</th>
+        <th style="width:48px">★</th>
+        <th style="width:150px">学習状況</th>
+        <th style="width:74px">Todai</th>
+      </tr>
+    </thead> -->
+    <tbody id="body"></tbody>
+  </table>
+  <div id="empty" class="empty" hidden></div>
+</div>
+
+<div class="pager" id="pager"></div>
+
+<footer>
+  <p>Favorites and study status are stored in this browser's <b>localStorage</b> only. They are not synced across devices or browsers.</p>
+  <p>Example sentences are generated automatically from grammatical patterns because the supplied dataset contained vocabulary, readings and Myanmar meanings only — no example sentences. Each sentence uses the vocabulary word naturally and is paired with a Myanmar translation.</p>
+  <p>Todai links open <code>https://japanese.todaiinews.com/my/dictionary/&lt;word&gt;-tab-vocab</code> in a new tab. We do not guarantee any particular result on the external site.</p>
+</footer>
+
+<script>
+/* ============ 1. VOCABULARY DATA (word|reading|myanmar) ============ */
+const RAW = `改善|かいぜん|တိုးတက်ပြင်ဆင်
+解決|かいけつ|ဖြေရှင်း
+現状|げんじょう|လက်ရှိအခြေအနေ
+影響|えいきょう|သက်ရောက်မှု
+増加|ぞうか|တိုးလာ
+減少|げんしょう|လျော့နည်း
+対策|たいさく|ဖြေရှင်းနည်း
+目的|もくてき|ရည်ရွယ်ချက်
+手段|しゅだん|နည်းလမ်း
+状況|じょうきょう|အခြေအနေ
+判断|はんだん|ဆုံးဖြတ်မှု
+理由|りゆう|အကြောင်းပြချက်
+結果|けっか|ရလဒ်
+効果|こうか|အကျိုးသက်ရောက်မှု
+課題|かだい|ပြဿနာ
+努力|どりょく|ကြိုးစားမှု
+成功|せいこう|အောင်မြင်မှု
+失敗|しっぱい|မအောင်မြင်မှု
+経験|けいけん|အတွေ့အကြုံ
+知識|ちしき|အသိပညာ
+技術|ぎじゅつ|နည်းပညာ
+能力|のうりょく|စွမ်းရည်
+向上|こうじょう|တိုးတက်မှု
+必要|ひつよう|လိုအပ်
+重要|じゅうよう|အရေးကြီး
+提案|ていあん|အကြံပြု
+実行|じっこう|လုပ်ဆောင်
+達成|たっせい|ပြီးမြောက်
+維持|いじ|ထိန်းသိမ်း
+管理|かんり|စီမံခန့်ခွဲ
+責任|せきにん|တာဝန်
+義務|ぎむ|မဖြစ်မနေ
+権利|けんり|အခွင့်အရေး
+自由|じゆう|လွတ်လပ်မှု
+制限|せいげん|ကန့်သတ်
+比較|ひかく|နှိုင်းယှဉ်
+区別|くべつ|ခွဲခြား
+共通|きょうつう|တူညီမှု
+特徴|とくちょう|အထူးလက္ခဏာ
+傾向|けいこう|လမ်းကြောင်း
+状態|じょうたい|အခြေအနေ
+内容|ないよう|အကြောင်းအရာ
+事実|じじつ|အမှန်တရား
+意見|いけん|အမြင်
+主張|しゅちょう|အဆို
+行動|こうどう|လှုပ်ရှားမှု
+対応|たいおう|တုံ့ပြန်
+解釈|かいしゃく|အဓိပ္ပါယ်ဖော်
+説明|せつめい|ရှင်းပြ
+判断力|はんだんりょく|ဆုံးဖြတ်နိုင်စွမ်း
+発展|はってん|ဖွံ့ဖြိုး
+発生|はっせい|ဖြစ်ပေါ်
+防止|ぼうし|တားဆီး
+解消|かいしょう|ဖြေရှင်းပယ်ဖျက်
+改良|かいりょう|ပြုပြင်တိုးတက်
+節約|せつやく|ချွေတာ
+消費|しょうひ|သုံးစွဲ
+支出|ししゅつ|ကုန်ကျ
+収入|しゅうにゅう|ဝင်ငွေ
+投資|とうし|ရင်းနှီးမြှုပ်နှံ
+経費|けいひ|ကုန်ကျစရိတ်
+利益|りえき|အမြတ်
+損失|そんしつ|အရှုံး
+価格|かかく|စျေးနှုန်း
+値上げ|ねあげ|စျေးတက်
+値下げ|ねさげ|စျေးကျ
+需要|じゅよう|လိုအပ်ချက်
+供給|きょうきゅう|ပံ့ပိုးမှု
+市場|しじょう|စျေးကွက်
+景気|けいき|စီးပွားရေးအခြေအနေ
+不況|ふきょう|စီးပွားရေးကျဆင်း
+成長率|せいちょうりつ|တိုးတက်နှုန်း
+競争|きょうそう|ပြိုင်ဆိုင်မှု
+独占|どくせん|အတစ်ယောက်ပိုင်
+契約|けいやく|စာချုပ်
+条件|じょうけん|အခြေအနေ
+同意|どうい|သဘောတူ
+承認|しょうにん|အတည်ပြု
+拒否|きょひ|ငြင်းပယ်
+許可|きょか|ခွင့်ပြု
+禁止|きんし|တားမြစ်
+規則|きそく|စည်းကမ်း
+法律|ほうりつ|ဥပဒေ
+制度|せいど|စနစ်
+政策|せいさく|မူဝါဒ
+改革|かいかく|ပြုပြင်ပြောင်းလဲ
+実現|じつげん|အကောင်အထည်ဖော်
+促進|そくしん|မြှင့်တင်
+抑制|よくせい|ထိန်းချုပ်
+拡大|かくだい|ချဲ့ထွင်
+縮小|しゅくしょう|လျှော့ချ
+権限|けんげん|အာဏာ
+分担|ぶんたん|ခွဲဝေ
+協力|きょうりょく|ပူးပေါင်း
+支援|しえん|ကူညီ
+援助|えんじょ|အထောက်အပံ့
+貢献|こうけん|အကျိုးပြု
+指導|しどう|ဦးဆောင်သင်ကြား
+評価|ひょうか|အကဲဖြတ်
+実績|じっせき|လုပ်ဆောင်ချက်ရလဒ်
+成績|せいせき|အမှတ်
+結果的|けっかてき|ရလဒ်အနေနဲ့
+具体的|ぐたいてき|တိတိကျကျ
+抽象的|ちゅうしょうてき|အယူအဆပိုင်း
+基本|きほん|အခြေခံ
+応用|おうよう|အသုံးချ
+発見|はっけん|ရှာတွေ့
+発明|はつめい|တီထွင်
+研究|けんきゅう|လေ့လာ
+調査|ちょうさ|စုံစမ်း
+実験|じっけん|စမ်းသပ်
+分析|ぶんせき|ခွဲခြမ်း
+比率|ひりつ|အချိုး
+割合|わりあい|ရာခိုင်နှုန်း
+平均|へいきん|ပျမ်းမျှ
+合計|ごうけい|စုစုပေါင်း
+増減|ぞうげん|တိုးလျော့
+上昇|じょうしょう|တက်လာ
+下降|かこう|ဆင်းသွား
+維持する|いじする|ထိန်းထား
+変化する|へんかする|ပြောင်းလဲ
+保つ|たもつ|ထိန်းသိမ်း
+続く|つづく|ဆက်လက်
+終わる|おわる|အဆုံးသတ်
+始まる|はじまる|စတင်
+進む|すすむ|ရှေ့ဆက်
+遅れる|おくれる|နောက်ကျ
+間に合う|まにあう|ချိန်မီ
+間違う|まちがう|မှား
+確認|かくにん|အတည်ပြု
+注意|ちゅうい|သတိ
+警告|けいこく|သတိပေး
+防ぐ|ふせぐ|ကာကွယ်
+守る|まもる|ထိန်းသိမ်း
+違反|いはん|ချိုးဖောက်
+許す|ゆるす|ခွင့်လွှတ်
+認める|みとめる|အသိအမှတ်ပြု
+否定|ひてい|ငြင်းဆို
+肯定|こうてい|အတည်ပြု
+判断する|はんだんする|ဆုံးဖြတ်
+決定|けってい|ဆုံးဖြတ်ချက်
+選択|せんたく|ရွေးချယ်
+比較する|ひかくする|နှိုင်းယှဉ်
+区別する|くべつする|ခွဲခြား
+理解する|りかいする|နားလည်
+説明する|せつめいする|ရှင်းပြ
+発表|はっぴょう|တင်ပြ
+議論|ぎろん|ဆွေးနွေး
+主張する|しゅちょうする|အဆိုတင်
+意見を述べる|いけんをのべる|အမြင်ပြော
+関係|かんけい|ဆက်နွယ်မှု
+人間関係|にんげんかんけい|လူမှုဆက်ဆံရေး
+立場|たちば|အနေအထား
+役割|やくわり|အခန်းကဏ္ဍ
+責任感|せきにんかん|တာဝန်ခံမှုစိတ်
+信頼|しんらい|ယုံကြည်မှု
+信用|しんよう|ယုံကြည်စိတ်ချမှု
+尊敬|そんけい|လေးစားမှု
+評判|ひょうばん|နာမည်
+印象|いんしょう|အထင်အမြင်
+感情|かんじょう|စိတ်ခံစားမှု
+気分|きぶん|စိတ်အခြေအနေ
+不安|ふあん|စိုးရိမ်
+心配|しんぱい|စိတ်ပူ
+安心|あんしん|စိတ်ချ
+満足|まんぞく|ကျေနပ်
+不満|ふまん|မကျေနပ်
+感動|かんどう|စိတ်လှုပ်ရှား
+興味|きょうみ|စိတ်ဝင်စားမှု
+関心|かんしん|အာရုံစိုက်မှု
+喜び|よろこび|ပျော်ရွှင်မှု
+悲しみ|かなしみ|ဝမ်းနည်းမှု
+怒り|いかり|ဒေါသ
+驚き|おどろき|အံ့အားသင့်မှု
+緊張|きんちょう|တင်းမာမှု
+行動|こうどう|လှုပ်ရှားမှု
+活動|かつどう|လှုပ်ရှားမှု
+習慣|しゅうかん|အလေ့အကျင့်
+生活|せいかつ|ဘဝ
+日常|にちじょう|နေ့စဉ်ဘဝ
+変化|へんか|ပြောင်းလဲမှု
+成長|せいちょう|တိုးတက်မှု
+進歩|しんぽ|တိုးတက်မှု
+発展|はってん|ဖွံ့ဖြိုးတိုးတက်
+進化|しんか|ပြောင်းလဲတိုးတက်
+状態|じょうたい|အခြေအနေ
+傾向|けいこう|လမ်းလျှောက်မှု
+特徴|とくちょう|အထူးလက္ခဏာ
+内容|ないよう|အကြောင်းအရာ
+程度|ていど|အတိုင်းအတာ
+水準|すいじゅん|အဆင့်
+限界|げんかい|အကန့်အသတ်
+可能性|かのうせい|ဖြစ်နိုင်ခြေ
+必要性|ひつようせい|လိုအပ်မှု
+重要性|じゅうようせい|အရေးကြီးမှု
+不足|ふそく|မလုံလောက်
+過剰|かじょう|လွန်ကဲ
+課題|かだい|ပြဿနာ
+問題点|もんだいてん|ပြဿနာအချက်
+解決策|かいけつさく|ဖြေရှင်းနည်း
+時間|じかん|အချိန်
+期間|きかん|ကာလ
+時期|じき|အချိန်ကာလ
+頻度|ひんど|အကြိမ်နှုန်း
+回数|かいすう|အကြိမ်အရေအတွက်
+一度|いちど|တစ်ကြိမ်
+再び|ふたたび|ထပ်မံ
+常に|つねに|အမြဲ
+しばしば|しばしば|မကြာခဏ
+たびに|たびに|တိုင်းတစ်ခါ
+次第に|しだいに|တဖြည်းဖြည်း
+突然|とつぜん|ရုတ်တရက်
+すぐに|すぐに|ချက်ချင်း
+やがて|やがて|မကြာမီ
+いずれ|いずれ|နောက်ပိုင်း
+人間|にんげん|လူသား
+人物|じんぶつ|လူတစ်ဦး
+他人|たにん|တခြားလူ
+自分|じぶん|ကိုယ်တိုင်
+相手|あいて|တဖက်လူ
+上司|じょうし|အထက်အရာရှိ
+部下|ぶか|လက်အောက်ဝန်ထမ်း
+同僚|どうりょう|အလုပ်ဖော်
+仲間|なかま|မိတ်ဆွေ
+友人|ゆうじん|သူငယ်ချင်း
+家族|かぞく|မိသားစု
+親|おや|မိဘ
+子供|こども|ကလေး
+教育|きょういく|ပညာရေး
+学習|がくしゅう|လေ့လာခြင်း
+勉強|べんきょう|စာသင်
+試験|しけん|စာမေးပွဲ
+合格|ごうかく|အောင်မြင်
+不合格|ふごうかく|မအောင်မြင်
+成績|せいせき|အမှတ်
+能力|のうりょく|စွမ်းရည်
+技術|ぎじゅつ|နည်းပညာ
+経験|けいけん|အတွေ့အကြုံ
+知識|ちしき|အသိပညာ
+向上|こうじょう|တိုးတက်
+努力|どりょく|ကြိုးစားမှု
+継続|けいぞく|ဆက်လက်
+挑戦|ちょうせん|စိန်ခေါ်မှု
+成功|せいこう|အောင်မြင်မှု
+失敗|しっぱい|မအောင်မြင်မှု
+原因|げんいん|အကြောင်းရင်း
+理由|りゆう|အကြောင်းပြချက်
+結果|けっか|ရလဒ်
+影響|えいきょう|သက်ရောက်မှု
+効果|こうか|အကျိုးသက်ရောက်မှု
+企業|きぎょう|ကုမ္ပဏီ
+会社|かいしゃ|ကုမ္ပဏီ
+業界|ぎょうかい|လုပ်ငန်းနယ်ပယ်
+就職|しゅうしょく|အလုပ်ဝင်
+転職|てんしょく|အလုပ်ပြောင်း
+雇用|こよう|အလုပ်အကိုင်
+採用|さいよう|ခန့်အပ်
+解雇|かいこ|အလုပ်ထုတ်
+給料|きゅうりょう|လစာ
+賃金|ちんぎん|လုပ်ခ
+昇給|しょうきゅう|လစာတိုး
+昇進|しょうしん|ရာထူးတိုး
+退職|たいしょく|အလုပ်နား
+勤務|きんむ|အလုပ်လုပ်ခြင်း
+残業|ざんぎょう|အချိန်ပို
+休日|きゅうじつ|နားရက်
+有給|ゆうきゅう|လစာပါနားရက်
+出勤|しゅっきん|အလုပ်သွား
+欠勤|けっきん|အလုပ်မတက်
+遅刻|ちこく|နောက်ကျ
+早退|そうたい|စောထွက်
+労働|ろうどう|အလုပ်လုပ်မှု
+作業|さぎょう|လုပ်ငန်း
+業務|ぎょうむ|အလုပ်တာဝန်
+担当|たんとう|တာဝန်ယူ
+上司|じょうし|အထက်အရာရှိ
+部下|ぶか|လက်အောက်
+同僚|どうりょう|အလုပ်ဖော်
+指示|しじ|အမိန့်
+報告|ほうこく|အစီရင်ခံ
+連絡|れんらく|ဆက်သွယ်
+相談|そうだん|တိုင်ပင်
+会議|かいぎ|အစည်းအဝေး
+資料|しりょう|စာရွက်စာတမ်း
+書類|しょるい|စာရွက်
+提出|ていしゅつ|တင်သွင်း
+確認|かくにん|အတည်ပြု
+修正|しゅうせい|ပြင်ဆင်
+完了|かんりょう|ပြီးစီး
+進行|しんこう|ဆက်လက်
+遅延|ちえん|နှောင့်နှေး
+中断|ちゅうだん|ရပ်နား
+再開|さいかい|ပြန်စ
+担当者|たんとうしゃ|တာဝန်ရှိသူ
+取引|とりひき|စီးပွားရေးလုပ်ငန်း
+顧客|こきゃく|ဖောက်သည်
+客|きゃく|ဧည့်သည်
+サービス|サービス|ဝန်ဆောင်မှု
+品質|ひんしつ|အရည်အသွေး
+満足度|まんぞくど|ကျေနပ်မှုအဆင့်
+商品|しょうひん|ကုန်ပစ္စည်း
+製品|せいひん|ထုတ်ကုန်
+在庫|ざいこ|ကုန်ပစ္စည်းလက်ကျန်
+販売|はんばい|ရောင်းချ
+購入|こうにゅう|ဝယ်ယူ
+注文|ちゅうもん|အော်ဒါ
+配送|はいそう|ပို့ဆောင်
+発送|はっそう|ပို့ပေး
+返品|へんぴん|ပြန်ပို့
+交換|こうかん|လဲလှယ်
+支払い|しはらい|ပေးချေ
+現金|げんきん|ငွေသား
+振込|ふりこみ|ဘဏ်လွှဲ
+領収書|りょうしゅうしょ|ငွေလက်ခံစာ
+請求書|せいきゅうしょ|ငွေတောင်းစာ
+割引|わりびき|လျှော့ဈေး
+割合|わりあい|အချိုး
+価格帯|かかくたい|စျေးနှုန်းအပိုင်း
+高価|こうか|စျေးကြီး
+安価|あんか|စျေးသက်သာ
+流行|りゅうこう|လူကြိုက်များမှု
+人気|にんき|လူကြိုက်များ
+傾向|けいこう|လမ်းလျှောက်မှု
+需要|じゅよう|လိုအပ်ချက်
+供給|きょうきゅう|ပံ့ပိုးမှု
+市場|しじょう|စျေးကွက်
+競争|きょうそう|ပြိုင်ဆိုင်မှု
+独占|どくせん|တစ်ဦးတည်းပိုင်
+宣伝|せんでん|ကြော်ငြာ
+広告|こうこく|ကြော်ငြာ
+評判|ひょうばん|နာမည်
+信頼|しんらい|ယုံကြည်မှု
+信用|しんよう|ယုံကြည်စိတ်ချမှု
+利益|りえき|အမြတ်
+損失|そんしつ|အရှုံး
+経費|けいひ|ကုန်ကျစရိတ်
+支出|ししゅつ|ကုန်ကျ
+収入|しゅうにゅう|ဝင်ငွေ
+投資|とうし|ရင်းနှီးမြှုပ်နှံ
+回収|かいしゅう|ပြန်ရယူ
+節約|せつやく|ချွေတာ
+無駄|むだ|အလဟသုံး
+効率|こうりつ|ထိရောက်မှု
+能率|のうりつ|ထိရောက်မှု
+改善|かいぜん|တိုးတက်ပြင်ဆင်
+向上|こうじょう|တိုးတက်
+維持|いじ|ထိန်းသိမ်း
+管理|かんり|စီမံခန့်ခွဲ
+運営|うんえい|စီမံခန့်ခွဲ
+経営|けいえい|စီးပွားရေးစီမံ
+社会|しゃかい|လူမှု
+制度|せいど|စနစ်
+法律|ほうりつ|ဥပဒေ
+規則|きそく|စည်းကမ်း
+ルール|ルール|စည်းမျဉ်း
+義務|ぎむ|တာဝန်
+権利|けんり|အခွင့်အရေး
+自由|じゆう|လွတ်လပ်မှု
+平等|びょうどう|တန်းတူညီမျှ
+公平|こうへい|တရားမျှတ
+政治|せいじ|နိုင်ငံရေး
+政府|せいふ|အစိုးရ
+政策|せいさく|မူဝါဒ
+選挙|せんきょ|မဲပေးခြင်း
+国民|こくみん|ပြည်သူ
+社会問題|しゃかいもんだい|လူမှုရေးပြဿနာ
+環境問題|かんきょうもんだい|ပတ်ဝန်းကျင်ပြဿနာ
+汚染|おせん|မသန့်ရှင်းမှု
+温暖化|おんだんか|ပူနွေးလာမှု
+資源|しげん|အရင်းအမြစ်
+エネルギー|エネルギー|စွမ်းအင်
+節電|せつでん|လျှပ်စစ်ချွေတာ
+再利用|さいりよう|ပြန်အသုံးပြု
+リサイクル|リサイクル|ပြန်အသုံးပြု
+保護|ほご|ကာကွယ်
+教育|きょういく|ပညာရေး
+学校|がっこう|ကျောင်း
+学生|がくせい|ကျောင်းသား
+教師|きょうし|ဆရာ
+授業|じゅぎょう|သင်ခန်းစာ
+試験|しけん|စာမေးပွဲ
+合格|ごうかく|အောင်
+不合格|ふごうかく|မအောင်
+成績|せいせき|အမှတ်
+評価|ひょうか|အကဲဖြတ်
+学習|がくしゅう|လေ့လာ
+勉強|べんきょう|စာသင်
+知識|ちしき|အသိပညာ
+技術|ぎじゅつ|နည်းပညာ
+能力|のうりょく|စွမ်းရည်
+向上|こうじょう|တိုးတက်
+努力|どりょく|ကြိုးစား
+継続|けいぞく|ဆက်လက်
+挑戦|ちょうせん|စိန်ခေါ်
+成功|せいこう|အောင်မြင်
+失敗|しっぱい|မအောင်မြင်
+原因|げんいん|အကြောင်းရင်း
+理由|りゆう|အကြောင်းပြချက်
+結果|けっか|ရလဒ်
+影響|えいきょう|သက်ရောက်မှု
+医療|いりょう|ဆေးကုသရေး
+病院|びょういん|ဆေးရုံ
+医者|いしゃ|ဆရာဝန်
+看護師|かんごし|သူနာပြု
+患者|かんじゃ|လူနာ
+病気|びょうき|ရောဂါ
+症状|しょうじょう|လက္ခဏာ
+治療|ちりょう|ကုသမှု
+手術|しゅじゅつ|ခွဲစိတ်
+入院|にゅういん|ဆေးရုံတက်
+退院|たいいん|ဆေးရုံဆင်း
+薬|くすり|ဆေး
+効果|こうか|အကျိုးသက်ရောက်မှု
+副作用|ふくさよう|ဘေးထွက်ဆိုးကျိုး
+予防|よぼう|ကြိုတင်ကာကွယ်
+健康|けんこう|ကျန်းမာရေး
+体調|たいちょう|ကိုယ်ခံအား
+回復|かいふく|ပြန်လည်ကောင်းမွန်
+悪化|あっか|ပိုမိုဆိုးလာ
+感染|かんせん|ကူးစက်
+安全|あんぜん|လုံခြုံ
+危険|きけん|အန္တရာယ်
+事故|じこ|မတော်တဆ
+災害|さいがい|ဘေးအန္တရာယ်
+地震|じしん|မြေငလျင်
+台風|たいふう|မုန်တိုင်း
+洪水|こうずい|ရေကြီး
+火災|かさい|မီးလောင်
+避難|ひなん|ရှောင်တိမ်း
+防災|ぼうさい|ဘေးကာကွယ်
+技術|ぎじゅつ|နည်းပညာ
+科学|かがく|သိပ္ပံ
+発明|はつめい|တီထွင်မှု
+研究|けんきゅう|လေ့လာ
+実験|じっけん|စမ်းသပ်
+データ|データ|ဒေတာ
+分析|ぶんせき|ခွဲခြမ်း
+結果|けっか|ရလဒ်
+発表|はっぴょう|တင်ပြ
+利用|りよう|အသုံးပြု
+開発|かいはつ|ဖွံ့ဖြိုးတိုးတက်
+導入|どうにゅう|ထည့်သွင်းအသုံးပြု
+改良|かいりょう|ပြုပြင်တိုးတက်
+効率|こうりつ|ထိရောက်မှု
+向上|こうじょう|တိုးတက်
+進歩|しんぽ|တိုးတက်
+普及|ふきゅう|ပြန့်ပွား
+利点|りてん|အားသာချက်
+欠点|けってん|အားနည်းချက်
+課題|かだい|ပြဿနာ
+文化|ぶんか|ယဉ်ကျေးမှု
+伝統|でんとう|ရိုးရာ
+習慣|しゅうかん|အလေ့အကျင့်
+風習|ふうしゅう|ရိုးရာအလေ့အထ
+宗教|しゅうきょう|ဘာသာရေး
+言語|げんご|ဘာသာစကား
+日本語|にほんご|ဂျပန်ဘာသာ
+外国語|がいこくご|နိုင်ငံခြားဘာသာ
+翻訳|ほんやく|ဘာသာပြန်
+通訳|つうやく|တိုက်ရိုက်ဘာသာပြန်
+表現|ひょうげん|ဖော်ပြချက်
+意味|いみ|အဓိပ္ပါယ်
+内容|ないよう|အကြောင်းအရာ
+理解|りかい|နားလည်မှု
+誤解|ごかい|နားလည်မှား
+会話|かいわ|စကားပြော
+発言|はつげん|ပြောဆိုချက်
+説明|せつめい|ရှင်းပြ
+質問|しつもん|မေးခွန်း
+返事|へんじ|ဖြေကြား
+連絡|れんらく|ဆက်သွယ်
+報告|ほうこく|အစီရင်ခံ
+相談|そうだん|တိုင်ပင်
+約束|やくそく|ကတိ
+信頼|しんらい|ယုံကြည်မှု
+人間関係|にんげんかんけい|လူမှုဆက်ဆံရေး
+交流|こうりゅう|ဆက်ဆံရေး
+協力|きょうりょく|ပူးပေါင်း
+対立|たいりつ|မတည်ငြိမ်မှု
+解決|かいけつ|ဖြေရှင်း
+感情|かんじょう|စိတ်ခံစားမှု
+印象|いんしょう|အထင်အမြင်
+気分|きぶん|စိတ်အခြေအနေ
+不安|ふあん|စိုးရိမ်
+安心|あんしん|စိတ်ချ
+満足|まんぞく|ကျေနပ်
+不満|ふまん|မကျေနပ်
+興味|きょうみ|စိတ်ဝင်စား
+関心|かんしん|အာရုံစိုက်
+驚き|おどろき|အံ့အားသင့်
+喜び|よろこび|ပျော်ရွှင်
+悲しみ|かなしみ|ဝမ်းနည်း
+怒り|いかり|ဒေါသ
+緊張|きんちょう|တင်းမာမှု
+リラックス|リラックス|အနားယူ
+状態|じょうたい|အခြေအနေ
+状況|じょうきょう|အခြေအနေ
+変化|へんか|ပြောင်းလဲ
+結果|けっか|ရလဒ်
+影響|えいきょう|သက်ရောက်မှု
+情報|じょうほう|သတင်းအချက်အလက်
+データ|データ|ဒေတာ
+資料|しりょう|စာရွက်စာတမ်း
+記録|きろく|မှတ်တမ်း
+保存|ほぞん|သိမ်းဆည်း
+管理|かんり|စီမံခန့်ခွဲ
+整理|せいり|စနစ်တကျလုပ်
+分類|ぶんるい|ခွဲခြား
+検索|けんさく|ရှာဖွေ
+取得|しゅとく|ရယူ
+提供|ていきょう|ပေးအပ်
+共有|きょうゆう|မျှဝေ
+公開|こうかい|ဖွင့်ပြ
+秘密|ひみつ|လျှို့ဝှက်
+個人情報|こじんじょうほう|ကိုယ်ရေးအချက်အလက်
+安全性|あんぜんせい|လုံခြုံမှု
+危険性|きけんせい|အန္တရာယ်ရှိမှု
+保護|ほご|ကာကွယ်
+対策|たいさく|ဖြေရှင်းနည်း
+防止|ぼうし|တားဆီး
+利用者|りようしゃ|အသုံးပြုသူ
+使用|しよう|အသုံးပြု
+操作|そうさ|ထိန်းချုပ်
+設定|せってい|သတ်မှတ်
+機能|きのう|လုပ်ဆောင်ချက်
+故障|こしょう|ချို့ယွင်း
+修理|しゅうり|ပြင်ဆင်
+点検|てんけん|စစ်ဆေး
+確認|かくにん|အတည်ပြု
+更新|こうしん|Update
+接続|せつぞく|ချိတ်ဆက်
+切断|せつだん|ဖြုတ်တောက်
+通信|つうしん|ဆက်သွယ်ရေး
+ネットワーク|ネットワーク|ကွန်ယက်
+システム|システム|စနစ်
+開発|かいはつ|ဖွံ့ဖြိုးတိုးတက်
+設計|せっけい|ဒီဇိုင်းရေး
+構造|こうぞう|ဖွဲ့စည်းပုံ
+内容|ないよう|အကြောင်းအရာ
+仕様|しよう|သတ်မှတ်ချက်
+改善|かいぜん|တိုးတက်ပြင်ဆင်
+向上|こうじょう|တိုးတက်
+効率|こうりつ|ထိရောက်မှု
+最適|さいてき|အကောင်းဆုံး
+最低|さいてい|အနိမ့်ဆုံး
+最大|さいだい|အမြင့်ဆုံး
+制限|せいげん|ကန့်သတ်
+条件|じょうけん|အခြေအနေ
+必要|ひつよう|လိုအပ်
+重要|じゅうよう|အရေးကြီး
+建物|たてもの|အဆောက်အဦ
+建設|けんせつ|ဆောက်လုပ်
+工事|こうじ|ဆောက်လုပ်ရေး
+設備|せつび|အဆောက်အအုံပစ္စည်း
+機械|きかい|စက်
+装置|そうち|စက်ပစ္စည်း
+道具|どうぐ|ကိရိယာ
+材料|ざいりょう|ပစ္စည်း
+原料|げんりょう|ကုန်ကြမ်း
+製造|せいぞう|ထုတ်လုပ်
+生産|せいさん|ထုတ်လုပ်မှု
+加工|かこう|ပြုပြင်ထုတ်လုပ်
+組立|くみたて|တပ်ဆင်
+分解|ぶんかい|ဖြုတ်
+修理|しゅうり|ပြင်ဆင်
+点検|てんけん|စစ်ဆေး
+保守|ほしゅ|ထိန်းသိမ်း
+故障|こしょう|ချို့ယွင်း
+事故|じこ|မတော်တဆ
+安全|あんぜん|လုံခြုံ
+危険|きけん|အန္တရာယ်
+注意|ちゅうい|သတိ
+警告|けいこく|သတိပေး
+防止|ぼうし|တားဆီး
+対策|たいさく|ဖြေရှင်းနည်း
+環境|かんきょう|ပတ်ဝန်းကျင်
+汚染|おせん|မသန့်ရှင်းမှု
+保護|ほご|ကာကွယ်
+節約|せつやく|ချွေတာ
+利用|りよう|အသုံးပြု
+再利用|さいりよう|ပြန်အသုံးပြု
+廃棄|はいき|စွန့်ပစ်
+処理|しょり|လုပ်ဆောင်
+管理|かんり|စီမံ
+運搬|うんぱん|သယ်ယူ
+配送|はいそう|ပို့ဆောင်
+保管|ほかん|သိမ်းဆည်း
+在庫|ざいこ|လက်ကျန်
+不足|ふそく|မလုံလောက်
+過剰|かじょう|လွန်ကဲ
+調整|ちょうせい|ချိန်ညှိ
+計画|けいかく|အစီအစဉ်
+実施|じっし|လုပ်ဆောင်
+実行|じっこう|လက်တွေ့လုပ်
+完了|かんりょう|ပြီးစီး
+中断|ちゅうだん|ရပ်နား
+再開|さいかい|ပြန်စ
+進行|しんこう|ဆက်လက်
+遅延|ちえん|နှောင့်နှေး
+終了|しゅうりょう|အဆုံး
+交通|こうつう|ယာဉ်သွားလာရေး
+手段|しゅだん|သွားလာနည်း
+電車|でんしゃ|ရထား
+地下鉄|ちかてつ|မြေအောက်ရထား
+バス|バス|ဘတ်စ်ကား
+タクシー|タクシー|တက္ကစီ
+自転車|じてんしゃ|စက်ဘီး
+徒歩|とほ|လမ်းလျှောက်
+通勤|つうきん|အလုပ်သွားလာ
+通学|つうがく|ကျောင်းသွားလာ
+渋滞|じゅうたい|ယာဉ်ကြောပိတ်
+混雑|こんざつ|လူစည်ကား
+遅れ|おくれ|နောက်ကျမှု
+運行|うんこう|လည်ပတ်
+停止|ていし|ရပ်တန့်
+発車|はっしゃ|ထွက်ခွာ
+到着|とうちゃく|ရောက်ရှိ
+乗車|じょうしゃ|စီး
+下車|げしゃ|ဆင်း
+乗換|のりかえ|ပြောင်းစီး
+料金|りょうきん|ခ
+運賃|うんちん|လမ်းခ
+定期券|ていきけん|လစဉ်လက်မှတ်
+切符|きっぷ|လက်မှတ်
+予約|よやく|ကြိုတင်ဘိုကင်
+確認|かくにん|အတည်ပြု
+案内|あんない|လမ်းညွှန်
+表示|ひょうじ|ပြသ
+地図|ちず|မြေပုံ
+目的地|もくてきち|ဦးတည်ရာ
+距離|きょり|အကွာအဝေး
+時間|じかん|အချိန်
+速度|そくど|အမြန်နှုန်း
+安全|あんぜん|လုံခြုံ
+危険|きけん|အန္တရာယ်
+事故|じこ|မတော်တဆ
+防止|ぼうし|တားဆီး
+注意|ちゅうい|သတိ
+規則|きそく|စည်းကမ်း
+違反|いはん|ချိုးဖောက်
+罰金|ばっきん|ဒဏ်ငွေ
+免許|めんきょ|လိုင်စင်
+更新|こうしん|Update
+取得|しゅとく|ရယူ
+申請|しんせい|လျှောက်ထား
+許可|きょか|ခွင့်ပြု
+禁止|きんし|တားမြစ်
+制限|せいげん|ကန့်သတ်
+管理|かんり|စီမံ
+運営|うんえい|လည်ပတ်စီမံ
+住民|じゅうみん|နေထိုင်သူ
+生活|せいかつ|ဘဝ
+日常|にちじょう|နေ့စဉ်
+習慣|しゅうかん|အလေ့အကျင့်
+文化|ぶんか|ယဉ်ကျေးမှု
+伝統|でんとう|ရိုးရာ
+行事|ぎょうじ|ပွဲလမ်း
+祭り|まつり|ပွဲတော်
+祝日|しゅくじつ|အားလပ်ရက်
+休日|きゅうじつ|နားရက်
+娯楽|ごらく|ဖျော်ဖြေရေး
+趣味|しゅみ|ဝါသနာ
+活動|かつどう|လှုပ်ရှားမှု
+運動|うんどう|လေ့ကျင့်ခန်း
+健康|けんこう|ကျန်းမာရေး
+食事|しょくじ|အစားအစာ
+栄養|えいよう|အာဟာရ
+生活習慣|せいかつしゅうかん|ဘဝအလေ့အကျင့်
+睡眠|すいみん|အိပ်စက်ခြင်း
+休息|きゅうそく|အနားယူ
+疲労|ひろう|ပင်ပန်းမှု
+回復|かいふく|ပြန်လည်ကောင်းမွန်
+病気|びょうき|ရောဂါ
+予防|よぼう|ကြိုတင်ကာကွယ်
+治療|ちりょう|ကုသ
+医療|いりょう|ဆေးကုသရေး
+保険|ほけん|အာမခံ
+費用|ひよう|ကုန်ကျစရိတ်
+負担|ふたん|တာဝန်/အလေးချိန်
+支払い|しはらい|ပေးချေ
+収入|しゅうにゅう|ဝင်ငွေ
+支出|ししゅつ|ကုန်ကျ
+貯金|ちょきん|စုဆောင်း
+節約|せつやく|ချွေတာ
+投資|とうし|ရင်းနှီးမြှုပ်နှံ
+計画|けいかく|အစီအစဉ်
+目標|もくひょう|ရည်မှန်းချက်
+達成|たっせい|ပြီးမြောက်
+成功|せいこう|အောင်မြင်
+失敗|しっぱい|မအောင်မြင်
+原因|げんいん|အကြောင်းရင်း
+理由|りゆう|အကြောင်းပြချက်
+結果|けっか|ရလဒ်
+影響|えいきょう|သက်ရောက်မှု
+改善|かいぜん|တိုးတက်ပြင်ဆင်
+向上|こうじょう|တိုးတက်
+継続|けいぞく|ဆက်လက်
+努力|どりょく|ကြိုးစား
+挑戦|ちょうせん|စိန်ခေါ်
+成長|せいちょう|တိုးတက်
+自然|しぜん|သဘာဝ
+環境|かんきょう|ပတ်ဝန်းကျင်
+気候|きこう|ရာသီဥတု
+天気|てんき|မိုးလေဝသ
+温度|おんど|အပူချိန်
+気温|きおん|အပူချိန်
+湿度|しつど|စိုထိုင်းဆ
+風|かぜ|လေ
+雨|あめ|မိုး
+雪|ゆき|နှင်း
+台風|たいふう|မုန်တိုင်း
+地震|じしん|မြေငလျင်
+災害|さいがい|ဘေးအန္တရာယ်
+被害|ひがい|ထိခိုက်မှု
+避難|ひなん|ရှောင်တိမ်း
+防災|ぼうさい|ဘေးကာကွယ်
+安全|あんぜん|လုံခြုံ
+危険|きけん|အန္တရာယ်
+注意|ちゅうい|သတိ
+対策|たいさく|ဖြေရှင်းနည်း
+資源|しげん|အရင်းအမြစ်
+エネルギー|エネルギー|စွမ်းအင်
+消費|しょうひ|သုံးစွဲ
+節約|せつやく|ချွေတာ
+再利用|さいりよう|ပြန်အသုံးပြု
+リサイクル|リサイクル|ပြန်အသုံးပြု
+保護|ほご|ကာကွယ်
+汚染|おせん|မသန့်ရှင်းမှု
+温暖化|おんだんか|ပူနွေးလာမှု
+対応|たいおう|တုံ့ပြန်
+社会|しゃかい|လူမှု
+問題|もんだい|ပြဿနာ
+課題|かだい|ပြဿနာ
+解決|かいけつ|ဖြေရှင်း
+支援|しえん|ကူညီ
+協力|きょうりょく|ပူးပေါင်း
+貢献|こうけん|အကျိုးပြု
+活動|かつどう|လှုပ်ရှားမှု
+参加|さんか|ပါဝင်
+実施|じっし|လုပ်ဆောင်
+計画|けいかく|အစီအစဉ်
+実行|じっこう|လက်တွေ့လုပ်
+評価|ひょうか|အကဲဖြတ်
+改善|かいぜん|တိုးတက်ပြင်ဆင်
+結果|けっか|ရလဒ်
+影響|えいきょう|သက်ရောက်မှု
+変化|へんか|ပြောင်းလဲ
+進歩|しんぽ|တိုးတက်
+成長|せいちょう|တိုးတက်
+将来|しょうらい|အနာဂတ်
+経済|けいざい|စီးပွားရေး
+産業|さんぎょう|စက်မှုလုပ်ငန်း
+工業|こうぎょう|စက်မှု
+農業|のうぎょう|လယ်ယာလုပ်ငန်း
+商業|しょうぎょう|ကုန်သွယ်ရေး
+貿易|ぼうえき|နိုင်ငံတကာကုန်သွယ်ရေး
+輸出|ゆしゅつ|ပို့ကုန်
+輸入|ゆにゅう|သွင်းကုန်
+為替|かわせ|ငွေလဲလှယ်
+円高|えんだか|ယန်းတန်ဖိုးတက်
+円安|えんやす|ယန်းတန်ဖိုးကျ
+物価|ぶっか|ကုန်ဈေးနှုန်း
+インフレ|インフレ|ငွေဖောင်းပွမှု
+デフレ|デフレ|ငွေကျဆင်းမှု
+景気|けいき|စီးပွားရေးအခြေအနေ
+成長|せいちょう|တိုးတက်
+不況|ふきょう|စီးပွားရေးကျ
+回復|かいふく|ပြန်ကောင်း
+投資|とうし|ရင်းနှီးမြှုပ်နှံ
+利益|りえき|အမြတ်
+損失|そんしつ|အရှုံး
+経費|けいひ|ကုန်ကျစရိတ်
+収入|しゅうにゅう|ဝင်ငွေ
+支出|ししゅつ|ကုန်ကျ
+貯金|ちょきん|စုဆောင်း
+節約|せつやく|ချွေတာ
+消費|しょうひ|သုံးစွဲ
+需要|じゅよう|လိုအပ်ချက်
+供給|きょうきゅう|ပံ့ပိုးမှု
+市場|しじょう|စျေးကွက်
+競争|きょうそう|ပြိုင်ဆိုင်မှု
+独占|どくせん|တစ်ဦးတည်းပိုင်
+企業|きぎょう|ကုမ္ပဏီ
+経営|けいえい|စီးပွားရေးစီမံ
+運営|うんえい|စီမံခန့်ခွဲ
+管理|かんり|စီမံ
+改善|かいぜん|တိုးတက်ပြင်ဆင်
+向上|こうじょう|တိုးတက်
+効率|こうりつ|ထိရောက်မှု
+実績|じっせき|ရလဒ်
+評価|ひょうか|အကဲဖြတ်
+成果|せいか|အောင်မြင်မှု
+課題|かだい|ပြဿနာ
+解決|かいけつ|ဖြေရှင်း
+対策|たいさく|ဖြေရှင်းနည်း
+実施|じっし|လုပ်ဆောင်
+実行|じっこう|လက်တွေ့လုပ်
+継続|けいぞく|ဆက်လက်
+中断|ちゅうだん|ရပ်နား
+完了|かんりょう|ပြီးစီး
+法律|ほうりつ|ဥပဒေ
+制度|せいど|စနစ်
+規則|きそく|စည်းကမ်း
+ルール|ルール|စည်းမျဉ်း
+義務|ぎむ|တာဝန်
+権利|けんり|အခွင့်အရေး
+自由|じゆう|လွတ်လပ်မှု
+平等|びょうどう|တန်းတူ
+公平|こうへい|တရားမျှတ
+責任|せきにん|တာဝန်
+契約|けいやく|စာချုပ်
+条件|じょうけん|အခြေအနေ
+内容|ないよう|အကြောင်းအရာ
+同意|どうい|သဘောတူ
+承認|しょうにん|အတည်ပြု
+拒否|きょひ|ငြင်းပယ်
+許可|きょか|ခွင့်ပြု
+禁止|きんし|တားမြစ်
+違反|いはん|ချိုးဖောက်
+罰|ばつ|အပြစ်ပေး
+罰金|ばっきん|ဒဏ်ငွေ
+犯罪|はんざい|ပြစ်မှု
+事件|じけん|အမှု
+事故|じこ|မတော်တဆ
+被害|ひがい|ထိခိုက်မှု
+裁判|さいばん|တရားရုံး
+判決|はんけつ|ဆုံးဖြတ်ချက်
+証拠|しょうこ|သက်သေ
+調査|ちょうさ|စုံစမ်း
+捜査|そうさ|စုံစမ်းစစ်ဆေး
+逮捕|たいほ|ဖမ်းဆီး
+釈放|しゃくほう|လွှတ်ပေး
+弁護士|べんごし|ရှေ့နေ
+被告|ひこく|အပြစ်တင်ခံသူ
+原告|げんこく|တိုင်ကြားသူ
+権利|けんり|အခွင့်အရေး
+義務|ぎむ|တာဝန်
+責任|せきにん|တာဝန်
+社会|しゃかい|လူမှု
+制度|せいど|စနစ်
+政府|せいふ|အစိုးရ
+政策|せいさく|မူဝါဒ
+選挙|せんきょ|မဲပေး
+国民|こくみん|ပြည်သူ
+意見|いけん|အမြင်
+主張|しゅちょう|အဆို
+表現|ひょうげん|ဖော်ပြချက်
+発言|はつげん|ပြောဆိုချက်
+議論|ぎろん|ဆွေးနွေး
+決定|けってい|ဆုံးဖြတ်
+芸術|げいじゅつ|အနုပညာ
+美術|びじゅつ|ပန်းချီအနုပညာ
+音楽|おんがく|ဂီတ
+映画|えいが|ရုပ်ရှင်
+演劇|えんげき|ဇာတ်ရုံ
+作品|さくひん|လက်ရာ
+作者|さくしゃ|စာရေးသူ
+観客|かんきゃく|ပရိသတ်
+上演|じょうえん|ပြသ
+公演|こうえん|ဖျော်ဖြေပြသ
+展覧会|てんらんかい|ပြပွဲ
+鑑賞|かんしょう|ကြည့်ရှုခံစား
+評価|ひょうか|အကဲဖြတ်
+批判|ひはん|ဝေဖန်
+感動|かんどう|စိတ်လှုပ်ရှား
+表現|ひょうげん|ဖော်ပြ
+技術|ぎじゅつ|နည်းပညာ
+能力|のうりょく|စွမ်းရည်
+才能|さいのう|ထူးချွန်မှု
+努力|どりょく|ကြိုးစား
+成功|せいこう|အောင်မြင်
+失敗|しっぱい|မအောင်မြင်
+挑戦|ちょうせん|စိန်ခေါ်
+経験|けいけん|အတွေ့အကြုံ
+成長|せいちょう|တိုးတက်
+人気|にんき|လူကြိုက်များ
+評判|ひょうばん|နာမည်
+影響|えいきょう|သက်ရောက်မှု
+流行|りゅうこう|ဖက်ရှင်/လူကြိုက်
+傾向|けいこう|လမ်းလျှောက်မှု
+文化|ぶんか|ယဉ်ကျေးမှု
+伝統|でんとう|ရိုးရာ
+習慣|しゅうかん|အလေ့အကျင့်
+価値|かち|တန်ဖိုး
+意味|いみ|အဓိပ္ပါယ်
+理解|りかい|နားလည်
+誤解|ごかい|နားလည်မှား
+説明|せつめい|ရှင်းပြ
+解釈|かいしゃく|အဓိပ္ပါယ်ဖွင့်
+判断|はんだん|ဆုံးဖြတ်ချက်
+意見|いけん|အမြင်
+主張|しゅちょう|အဆို
+議論|ぎろん|ဆွေးနွေး
+結論|けつろん|နိဂုံး
+根拠|こんきょ|အထောက်အထား
+証明|しょうめい|သက်သေပြ
+分析|ぶんせき|ခွဲခြမ်း
+比較|ひかく|နှိုင်းယှဉ်
+対象|たいしょう|ရည်ရွယ်သူ
+視点|してん|မြင်ကွင်းအမြင်
+心理|しんり|စိတ်ပညာ
+感情|かんじょう|စိတ်ခံစားမှု
+意識|いしき|သတိ
+無意識|むいしき|မသိမသာ
+性格|せいかく|စရိုက်
+特徴|とくちょう|အထူးလက္ခဏာ
+個性|こせい|ကိုယ်ပိုင်လက္ခဏာ
+傾向|けいこう|လမ်းလျှောက်မှု
+行動|こうどう|လှုပ်ရှားမှု
+習慣|しゅうかん|အလေ့အကျင့်
+判断|はんだん|ဆုံးဖြတ်
+選択|せんたく|ရွေးချယ်
+決定|けってい|ဆုံးဖြတ်ချက်
+迷い|まよい|မတည်ငြိမ်
+後悔|こうかい|နောင်တ
+満足|まんぞく|ကျေနပ်
+不満|ふまん|မကျေနပ်
+不安|ふあん|စိုးရိမ်
+安心|あんしん|စိတ်ချ
+緊張|きんちょう|တင်းမာ
+ストレス|ストレス|စိတ်ဖိစီးမှု
+解消|かいしょう|ဖြေရှင်း
+回復|かいふく|ပြန်ကောင်း
+維持|いじ|ထိန်းသိမ်း
+改善|かいぜん|တိုးတက်ပြင်ဆင်
+人間関係|にんげんかんけい|လူမှုဆက်ဆံရေး
+交流|こうりゅう|ဆက်ဆံရေး
+協力|きょうりょく|ပူးပေါင်း
+対立|たいりつ|မတည်ငြိမ်မှု
+調整|ちょうせい|ချိန်ညှိ
+信頼|しんらい|ယုံကြည်မှု
+信用|しんよう|ယုံကြည်စိတ်ချမှု
+尊敬|そんけい|လေးစား
+評価|ひょうか|အကဲဖြတ်
+印象|いんしょう|အထင်အမြင်
+コミュニケーション|コミュニケーション|ဆက်သွယ်ရေး
+会話|かいわ|စကားပြော
+発言|はつげん|ပြောဆိုချက်
+表現|ひょうげん|ဖော်ပြချက်
+理解|りかい|နားလည်
+誤解|ごかい|နားလည်မှား
+説明|せつめい|ရှင်းပြ
+質問|しつもん|မေးခွန်း
+返事|へんじ|ဖြေကြား
+約束|やくそく|ကတိ
+責任|せきにん|တာဝန်
+義務|ぎむ|တာဝန်
+権利|けんり|အခွင့်အရေး
+自由|じゆう|လွတ်လပ်
+制限|せいげん|ကန့်သတ်
+未来|みらい|အနာဂတ်
+将来|しょうらい|အနာဂတ်
+目標|もくひょう|ရည်မှန်းချက်
+計画|けいかく|အစီအစဉ်
+実現|じつげん|အကောင်အထည်ဖော်
+成功|せいこう|အောင်မြင်
+失敗|しっぱい|မအောင်မြင်
+経験|けいけん|အတွေ့အကြုံ
+教訓|きょうくん|သင်ခန်းစာ
+成長|せいちょう|တိုးတက်
+努力|どりょく|ကြိုးစား
+継続|けいぞく|ဆက်လက်
+習慣|しゅうかん|အလေ့အကျင့်
+改善|かいぜん|တိုးတက်ပြင်ဆင်
+向上|こうじょう|တိုးတက်
+挑戦|ちょうせん|စိန်ခေါ်
+克服|こくふく|ကျော်လွှား
+達成|たっせい|ပြီးမြောက်
+結果|けっか|ရလဒ်
+評価|ひょうか|အကဲဖြတ်
+社会|しゃかい|လူမှု
+変化|へんか|ပြောင်းလဲ
+影響|えいきょう|သက်ရောက်မှု
+問題|もんだい|ပြဿနာ
+課題|かだい|ပြဿနာ
+解決|かいけつ|ဖြေရှင်း
+対策|たいさく|ဖြေရှင်းနည်း
+支援|しえん|ကူညီ
+協力|きょうりょく|ပူးပေါင်း
+貢献|こうけん|အကျိုးပြု
+活動|かつどう|လှုပ်ရှားမှု
+参加|さんか|ပါဝင်
+実施|じっし|လုပ်ဆောင်
+実行|じっこう|လက်တွေ့လုပ်
+継続|けいぞく|ဆက်လက်
+判断|はんだん|ဆုံးဖြတ်
+選択|せんたく|ရွေးချယ်
+決定|けってい|ဆုံးဖြတ်ချက်
+責任|せきにん|တာဝန်
+義務|ぎむ|တာဝန်
+権利|けんり|အခွင့်အရေး
+自由|じゆう|လွတ်လပ်
+制限|せいげん|ကန့်သတ်
+規則|きそく|စည်းကမ်း
+社会|しゃかい|လူမှု
+価値|かち|တန်ဖိုး
+意味|いみ|အဓိပ္ပါယ်
+理解|りかい|နားလည်
+活用|かつよう|အသုံးချ
+実力|じつりょく|အရည်အချင်း`;
+
+/* ============ 2. PART OF SPEECH ============ */
+const ADV = {'しばしば':1,'たびに':1,'すぐに':1,'やがて':1,'いずれ':1,'常に':1,'再び':1,'次第に':1,'突然':1,'一度':1};
+function posOf(w){
+  if (ADV[w]) return '副詞';
+  if (/する$/.test(w)) return '動詞（する動詞）';
+  if (/[うくぐすつぬぶむる]$/.test(w) && /[\u4e00-\u9fff]/.test(w)) return '動詞';
+  if (/^[\u30a0-\u30ffー]+$/.test(w)) return '名詞';
+  return '名詞・する動詞';
+}
+
+/* ============ 3. EXAMPLE SENTENCE GENERATION ============ */
+const NF = [
+  ['{w}について詳しく調べた。','{w}အကြောင်း အသေးစိတ် လေ့လာခဲ့သည်။'],
+  ['この問題は{w}が鍵だ。','ဤပြဿနာတွင် {w}သည် အဓိကဖြစ်သည်။'],
+  ['{w}の重要性を改めて感じた。','{w}၏ အရေးကြီးမှုကို ထပ်မံခံစားခဲ့သည်။'],
+  ['{w}をもっと深く考える必要がある。','{w}ကို ပိုမိုနက်ရှိုင်းစွာ စဉ်းစားရန် လိုအပ်သည်။'],
+  ['会議で{w}について話し合った。','အစည်းအဝေးတွင် {w}အကြောင်း ဆွေးနွေးခဲ့သည်။'],
+  ['{w}は私たちにとって大切なことだ。','{w}သည် ကျွန်ုပ်တို့အတွက် အရေးကြီးသောအရာဖြစ်သည်။'],
+  ['彼は{w}をよく理解している。','သူသည် {w}ကို ကောင်းစွာ နားလည်သည်။'],
+  ['{w}をめぐって意見が分かれた。','{w}ကို အကြောင်းပြု၍ အမြင်ကွဲပြားခဲ့သည်။'],
+  ['{w}について説明してください。','{w}အကြောင်း ရှင်းပြပါ။'],
+  ['この{w}はとても複雑だ。','ဤ{w}သည် အလွန်ရှုပ်ထွေးသည်။'],
+  ['{w}が不足している。','{w} မလုံလောက်နေသည်။'],
+  ['{w}を正しく理解することが必要だ。','{w}ကို မှန်ကန်စွာ နားလည်ရန် လိုအပ်သည်။']
+];
+const VF = [
+  ['毎日{w}ことが大切だ。','နေ့စဉ် {w}ခြင်းသည် အရေးကြီးသည်။'],
+  ['{w}のは簡単ではない。','{w}ခြင်းသည် လွယ်မဟုတ်ပါ။'],
+  ['しっかり{w}必要がある。','သေချာစွာ {w}ရန် လိုအပ်သည်။'],
+  ['{w}ために努力を続けている。','{w}ရန် ကြိုးစားမှုကို ဆက်လက်ပြုလုပ်နေသည်။'],
+  ['{w}ことによって成長できる。','{w}ခြင်းဖြင့် တိုးတက်နိုင်သည်။'],
+  ['彼はいつも{w}ことを心がけている。','သူသည် အမြဲ {w}ရန် သတိပြုသည်။'],
+  ['{w}ように気をつけている。','{w}အောင် သတိထားနေသည်။'],
+  ['この点を{w}べきだと思う。','ဤအချက်ကို {w}သင့်သည်ဟု ထင်သည်။'],
+  ['なかなか{w}ことができない。','{w}ရန် မလွယ်ကူပါ။'],
+  ['{w}方法を考えている。','{w}နည်းလမ်းကို စဉ်းစားနေသည်။']
+];
+const ADVEX = {
+  'しばしば':['彼はしばしば図書館へ行く。','သူသည် မကြာခဏ စာကြည့်တိုက်သို့ သွားသည်။'],
+  'たびに':['会うたびに彼は成長している。','တွေ့တိုင်း သူသည် တိုးတက်နေသည်။'],
+  'すぐに':['すぐに出発しましょう。','ချက်ချင်း ထွက်ခွာကြစို့။'],
+  'やがて':['やがて春が来るだろう。','မကြာမီ နွေဦးရောက်လာလိမ့်မည်။'],
+  'いずれ':['いずれ分かるときが来る。','နောက်ပိုင်း နားလည်လာမည့်အချိန် ရောက်လာမည်။'],
+  '常に':['常に安全を心がけている。','အမြဲ လုံခြုံမှုကို သတိပြုနေသည်။'],
+  '再び':['再び挑戦したいと思う。','ထပ်မံ စိန်ခေါ်လိုသည်ဟု ထင်သည်။'],
+  '次第に':['次第に慣れてきた。','တဖြည်းဖြည်း ကျွမ်းကျင်လာသည်။'],
+  '突然':['突然雨が降り出した。','ရုတ်တရက် မိုးရွာလာသည်။'],
+  '一度':['一度失敗しても大丈夫だ。','တစ်ကြိမ် မအောင်မြင်လည်း ရသည်။']
+};
+
+/* ============ 4. BUILD VOCABULARY (robust parsing) ============ */
+/* Split on either LF or CRLF, drop blank lines, trim each line. This
+   prevents the array index (and therefore the ID) from shifting due to
+   stray blank lines or trailing carriage returns in the source. */
+const LINES = RAW.replace(/\r/g, '').split('\n').map(function (l) { return l.trim(); })
+                  .filter(function (l) { return l.length > 0; });
+
+const V = LINES.map(function (line, i) {
+  const p = line.split('|');
+  const w = (p[0] || '').trim();
+  const r = (p[1] || '').trim();
+  const m = (p[2] || '').trim();
+  const pos = posOf(w);
+  let ex;
+  if (ADVEX[w]) {
+    ex = ADVEX[w];
+  } else if (pos === '動詞' || pos === '動詞（する動詞）') {
+    const f = VF[i % VF.length];
+    ex = [f[0].replace(/\{w\}/g, w), f[1].replace(/\{w\}/g, m)];
+  } else {
+    const f = NF[i % NF.length];
+    ex = [f[0].replace(/\{w\}/g, w), f[1].replace(/\{w\}/g, m)];
+  }
+  return {
+    /* ID is a permanent property of the record, not an array index in the UI. */
+    id: i + 1,
+    word: w,
+    kanji: w,
+    reading: r,
+    meaningMyanmar: m,
+    partOfSpeech: pos,
+    exampleJapanese: ex[0],
+    exampleMyanmar: ex[1],
+    audioText: r || w
+  };
+});
+
+/* ============ 4b. DATASET VALIDATION (IDs) ============ */
+function validateDataset() {
+  const ids = V.map(function (v) { return v.id; });
+  const seen = Object.create(null);
+  const dupes = [];
+  ids.forEach(function (id) {
+    if (seen[id]) dupes.push(id);
+    seen[id] = true;
+  });
+  const missing = [];
+  const max = ids.length ? ids[ids.length - 1] : 0;
+  for (let n = 1; n <= max; n++) {
+    if (!seen[n]) missing.push(n);
+  }
+  const emptyWord = V.filter(function (v) { return !v.word; }).map(function (v) { return v.id; });
+  const result = {
+    count: V.length,
+    firstId: V.length ? V[0].id : null,
+    lastId: V.length ? V[V.length - 1].id : null,
+    duplicates: dupes,
+    missing: missing,
+    emptyWordIds: emptyWord
+  };
+  /* Console report */
+  console.info('[Vocab] Loaded ' + result.count + ' entries (IDs ' +
+               result.firstId + '–' + result.lastId + ').');
+  if (dupes.length)   console.warn('[Vocab] Duplicate IDs:', dupes);
+  if (missing.length) console.warn('[Vocab] Missing IDs:', missing);
+  if (emptyWord.length) console.warn('[Vocab] Entries with empty word field:', emptyWord);
+  if (result.count !== 1000) console.warn('[Vocab] Expected 1000 entries, got ' + result.count);
+  /* Expose for diagnostics */
+  window.__VOCAB_DEBUG = result;
+  return result;
+}
+const VALIDATION = validateDataset();
+
+/* Small visible indicator in the header */
+(function () {
+  const el = document.getElementById('idBadge');
+  if (!el) return;
+  const problems = [];
+  if (VALIDATION.duplicates.length) problems.push('dup:' + VALIDATION.duplicates.length);
+  if (VALIDATION.missing.length)    problems.push('miss:' + VALIDATION.missing.length);
+  if (VALIDATION.emptyWordIds.length) problems.push('empty:' + VALIDATION.emptyWordIds.length);
+  if (VALIDATION.count !== 1000) problems.push('n=' + VALIDATION.count);
+  if (problems.length === 0) {
+    el.textContent = 'IDs ✓ (' + VALIDATION.count + ')';
+    el.classList.remove('warn');
+  } else {
+    el.textContent = 'IDs ⚠ ' + problems.join(' ');
+    el.classList.add('warn');
+    el.title = 'ID issues: ' + problems.join(', ');
+  }
+})();
+
+/* ============ 5. HELPERS ============ */
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, function (c) {
+    return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+  });
+}
+function todaiUrl(w) {
+  return 'https://japanese.todaiinews.com/my/dictionary/' + encodeURIComponent(w) + '-tab-vocab';
+}
+const ST = [
+  ['new', '未学習 / မလေ့လာရသေး'],
+  ['learning', '学習中 / လေ့လာနေဆဲ'],
+  ['memorized', '覚えた / ကျက်မှတ်ပြီး']
+];
+const ST_KEYS = ST.map(function (s) { return s[0]; });
+
+/* ============ 6. PERSISTENCE ============ */
+function load(k, d) {
+  try { const v = JSON.parse(localStorage.getItem(k)); return v == null ? d : v; }
+  catch (e) { return d; }
+}
+function save(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+
+/* Index lookup by ID (never by array position) */
+const V_BY_ID = Object.create(null);
+V.forEach(function (v) { V_BY_ID[v.id] = v; });
+
+let favs = new Set((load('jv_fav', []) || []).filter(function (n) { return typeof n === 'number'; }));
+let sts  = load('jv_st', {}) || {};
+let filt = 'all';
+let q    = '';
+
+/* Pagination state */
+const PAGE_SIZES = [25, 50, 100];
+let pageSize = 50;
+let page = 1;
+
+/* ============ 7. DOM REFS ============ */
+const body    = document.getElementById('body');
+const cntEl   = document.getElementById('cnt');
+const fnEl    = document.getElementById('fn');
+const emptyEl = document.getElementById('empty');
+const qEl     = document.getElementById('q');
+const pagerEl = document.getElementById('pager');
+
+/* ============ 8. ROW HTML ============ */
+function rowHTML(v) {
+  const isFav = favs.has(v.id);
+  const st = ST_KEYS.indexOf(sts[v.id]) !== -1 ? sts[v.id] : 'new';
+  const opts = ST.map(function (s) {
+    return '<option value="' + s[0] + '"' + (s[0] === st ? ' selected' : '') + '>' + esc(s[1]) + '</option>';
+  }).join('');
+  return '<tr data-id="' + v.id + '">' +
+    '<td class="id-cell">' + v.id + '</td>' +
+    '<td><div class="jp">' + esc(v.word) + '</div></td>' +
+    '<td class="rd">' + esc(v.reading) + '</td>' +
+    '<td class="mm">' + esc(v.meaningMyanmar) + '</td>' +
+    '<td>' + esc(v.partOfSpeech) + '</td>' +
+    '<td class="ex"><div>' + esc(v.exampleJapanese) + '</div>' +
+      '<div class="mm">' + esc(v.exampleMyanmar) + '</div></td>' +
+    '<td><button class="sm icon spk" type="button" title="発音 / အသံထွက်" aria-label="Pronounce">🔊</button></td>' +
+    '<td><button class="sm icon fv' + (isFav ? ' on' : '') + '" type="button" title="Favorite" aria-pressed="' + isFav + '">' +
+      (isFav ? '★' : '☆') + '</button></td>' +
+    '<td><select class="sm stsel" data-st="' + st + '" aria-label="Study status">' + opts + '</select></td>' +
+    '<td><a class="td" href="' + esc(todaiUrl(v.word)) + '" target="_blank" rel="noopener noreferrer">Todai</a></td>' +
+  '</tr>';
+}
+
+/* ============ 9. FILTER + SEARCH ============ */
+function getFiltered() {
+  const qq = q.trim().toLowerCase();
+  const out = [];
+  for (let i = 0; i < V.length; i++) {
+    const v = V[i];
+    if (filt === 'fav' && !favs.has(v.id)) continue;
+    if (qq) {
+      const hay = (v.word + ' ' + v.reading + ' ' + v.meaningMyanmar + ' ' +
+                   v.partOfSpeech + ' ' + v.exampleJapanese + ' ' + v.exampleMyanmar).toLowerCase();
+      if (hay.indexOf(qq) === -1) continue;
+    }
+    out.push(v);
+  }
+  return out;
+}
+
+/* ============ 10. PAGINATION UI ============ */
+function pageList(cur, total) {
+  if (total <= 7) {
+    const a = [];
+    for (let i = 1; i <= total; i++) a.push(i);
+    return a;
+  }
+  const set = new Set([1, total, cur]);
+  if (cur - 1 >= 1) set.add(cur - 1);
+  if (cur + 1 <= total) set.add(cur + 1);
+  if (cur <= 3) { set.add(2); set.add(3); set.add(4); }
+  if (cur >= total - 2) { set.add(total - 1); set.add(total - 2); set.add(total - 3); }
+  const arr = Array.from(set).filter(function (n) { return n >= 1 && n <= total; })
+                 .sort(function (a, b) { return a - b; });
+  const out = [];
+  let prev = 0;
+  for (let i = 0; i < arr.length; i++) {
+    const n = arr[i];
+    if (prev && n - prev > 1) out.push('...');
+    out.push(n);
+    prev = n;
+  }
+  return out;
+}
+
+function renderPager(total, totalPages, start, shown) {
+  if (total === 0) { pagerEl.innerHTML = ''; return; }
+
+  const end = start + shown;
+  const firstId = (V.length && V[0].id) || 1;
+  const lastId  = (V.length && V[V.length - 1].id) || 0;
+  const summary = 'Showing ' + (start + 1) + '–' + end + ' of ' + total +
+                  ' vocabulary entries (dataset IDs ' + firstId + '–' + lastId + ')';
+
+  const list = pageList(page, totalPages);
+  const pageBtns = list.map(function (n) {
+    if (n === '...') return '<span class="ell">…</span>';
+    return '<button type="button" class="pg' + (n === page ? ' on' : '') +
+           '" data-pg="' + n + '"' +
+           (n === page ? ' aria-current="page"' : '') +
+           '>' + n + '</button>';
+  }).join('');
+
+  const sizeOpts = PAGE_SIZES.map(function (n) {
+    return '<option value="' + n + '"' + (n === pageSize ? ' selected' : '') + '>' + n + '</option>';
+  }).join('');
+
+  pagerEl.innerHTML =
+    '<span class="info">' + esc(summary) + '</span>' +
+    '<button type="button" data-nav="prev"' + (page <= 1 ? ' disabled' : '') + '>‹ Prev</button>' +
+    '<span class="pages">' + pageBtns + '</span>' +
+    '<button type="button" data-nav="next"' + (page >= totalPages ? ' disabled' : '') + '>Next ›</button>' +
+    '<label class="sizer">Per page <select id="psz">' + sizeOpts + '</select></label>';
+}
+
+/* ============ 11. RENDER ============ */
+function render() {
+  const all = getFiltered();
+  const total = all.length;
+  const totalPages = Math.max(1, Math.ceil(total / pageSize));
+
+  /* Clamp page against the current filtered dataset. */
+  if (page > totalPages) page = totalPages;
+  if (page < 1) page = 1;
+
+  /* Standard slicing: startIndex = (page-1)*pageSize, endIndex = start + pageSize */
+  const startIndex = (page - 1) * pageSize;
+  const endIndex   = startIndex + pageSize;
+  const slice = all.slice(startIndex, endIndex);
+
+  cntEl.textContent = total + ' / ' + V.length;
+  fnEl.textContent  = favs.size;
+
+  if (total === 0) {
+    body.innerHTML = '';
+    emptyEl.hidden = false;
+    emptyEl.innerHTML = '<b>ရလဒ် မတွေ့ပါ / 該当なし</b>' +
+      (filt === 'fav'
+        ? 'No favorites yet. Tap ☆ on any row to save it here.'
+        : 'No vocabulary matches your search. Try different keywords or clear the search box.');
+    pagerEl.innerHTML = '';
+    return;
+  }
+
+  emptyEl.hidden = true;
+  const out = new Array(slice.length);
+  for (let i = 0; i < slice.length; i++) out[i] = rowHTML(slice[i]);
+  body.innerHTML = out.join('');
+
+  renderPager(total, totalPages, startIndex, slice.length);
+}
+
+/* ============ 12. TABLE EVENTS ============ */
+body.addEventListener('click', function (e) {
+  const btn = e.target.closest('button');
+  if (!btn) return;
+  const tr = btn.closest('tr');
+  if (!tr) return;
+  const id = Number(tr.dataset.id);
+  const v = V_BY_ID[id];               /* look up by ID, not by array position */
+  if (!v) return;
+
+  if (btn.classList.contains('spk')) {
+    speak(v);
+  } else if (btn.classList.contains('fv')) {
+    toggleFav(id, btn, tr);
+  }
+});
+
+body.addEventListener('change', function (e) {
+  const sel = e.target.closest('select.stsel');
+  if (!sel) return;
+  const tr = sel.closest('tr');
+  if (!tr) return;
+  const id = Number(tr.dataset.id);
+  const val = sel.value;
+  if (ST_KEYS.indexOf(val) === -1) return;
+  sts[id] = val;
+  save('jv_st', sts);
+  sel.setAttribute('data-st', val);
+  /* Study status change preserves the current page. */
+});
+
+function toggleFav(id, btn, tr) {
+  if (favs.has(id)) favs.delete(id); else favs.add(id);
+  save('jv_fav', Array.from(favs));
+  fnEl.textContent = favs.size;
+
+  if (filt === 'fav' && !favs.has(id)) {
+    /* Removing a favorite in Favorites view: full re-render so pagination
+       and total page count update correctly. */
+    render();
+    return;
+  }
+  const on = favs.has(id);
+  btn.classList.toggle('on', on);
+  btn.textContent = on ? '★' : '☆';
+  btn.setAttribute('aria-pressed', String(on));
+}
+
+/* ============ 13. PAGER EVENTS ============ */
+pagerEl.addEventListener('click', function (e) {
+  const nav = e.target.closest('button[data-nav]');
+  if (nav) {
+    if (nav.dataset.nav === 'prev') { page--; render(); }
+    else if (nav.dataset.nav === 'next') { page++; render(); }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    return;
+  }
+  const pg = e.target.closest('button[data-pg]');
+  if (pg) {
+    const n = Number(pg.dataset.pg);
+    if (!isNaN(n) && n !== page) {
+      page = n;
+      render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+});
+
+pagerEl.addEventListener('change', function (e) {
+  const sel = e.target.closest('#psz');
+  if (!sel) return;
+  const n = Number(sel.value);
+  if (PAGE_SIZES.indexOf(n) === -1) return;
+  pageSize = n;
+  page = 1;
+  render();
+});
+
+/* ============ 14. SPEECH ============ */
+function speak(v) {
+  if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') return;
+  try {
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(v.audioText || v.reading || v.word);
+    u.lang = 'ja-JP';
+    u.rate = 0.9;
+    const vs = window.speechSynthesis.getVoices() || [];
+    for (let i = 0; i < vs.length; i++) {
+      if ((vs[i].lang || '').toLowerCase().indexOf('ja') === 0) { u.voice = vs[i]; break; }
+    }
+    window.speechSynthesis.speak(u);
+  } catch (err) {}
+}
+if (window.speechSynthesis && 'onvoiceschanged' in window.speechSynthesis) {
+  window.speechSynthesis.onvoiceschanged = function () {};
+}
+
+/* ============ 15. SEARCH / FILTER ============ */
+let t = null;
+qEl.addEventListener('input', function () {
+  q = qEl.value;
+  if (t) clearTimeout(t);
+  t = setTimeout(function () {
+    t = null;
+    page = 1;           /* reset to page 1 on search change */
+    render();
+  }, 80);
+});
+document.getElementById('clr').addEventListener('click', function () {
+  qEl.value = ''; q = '';
+  page = 1;
+  render();
+  qEl.focus();
+});
+
+const bAll = document.getElementById('bAll');
+const bFav = document.getElementById('bFav');
+bAll.addEventListener('click', function () {
+  if (filt === 'all') return;
+  filt = 'all';
+  page = 1;             /* reset to page 1 on filter change */
+  bAll.classList.add('on'); bFav.classList.remove('on');
+  render();
+});
+bFav.addEventListener('click', function () {
+  if (filt === 'fav') return;
+  filt = 'fav';
+  page = 1;
+  bFav.classList.add('on'); bAll.classList.remove('on');
+  render();
+});
+
+/* ============ 16. DARK MODE ============ */
+const themeBtn = document.getElementById('theme');
+function applyTheme(t) {
+  document.documentElement.setAttribute('data-t', t);
+  themeBtn.textContent = t === 'dark' ? '☀️' : '🌙';
+  themeBtn.title = t === 'dark' ? 'Light Mode' : 'Dark Mode';
+}
+(function initTheme() {
+  let t = null;
+  try { t = localStorage.getItem('jv_th'); } catch (e) {}
+  if (t !== 'dark' && t !== 'light') {
+    t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+  }
+  applyTheme(t);
+})();
+themeBtn.addEventListener('click', function () {
+  const next = document.documentElement.getAttribute('data-t') === 'dark' ? 'light' : 'dark';
+  applyTheme(next);
+  try { localStorage.setItem('jv_th', next); } catch (e) {}
+});
+
+/* ============ 17. STICKY HEADER OFFSET ============ */
+function setSh() {
+  const el = document.getElementById('stickyTop');
+  if (el) document.documentElement.style.setProperty('--sh', el.offsetHeight + 'px');
+}
+window.addEventListener('resize', setSh);
+setSh();
+
+/* ============ 18. INIT ============ */
+render();
+</script>
+</body>
+</html>
